@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html class=" w-mod-ix">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style>
+        .wf-force-outline-none[tabindex="-1"]:focus {
+            outline: none;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WNGS4SZ3C7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-WNGS4SZ3C7');
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title></title>Person-in-WiFi 3D: End-to-End Multi-Person 3D Pose Estimation with Wi-Fi</title>
+    <link rel="stylesheet" href="images/bootstrap.min.css">
+    <link href="images/css.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="images/Highlight-Clean.css">
+    <link rel="stylesheet" href="images/styles.css">
+
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <meta property="og:site_name" content="XRF55">
+    <meta property="og:title" content="Person-in-WiFi 3D: End-to-End Multi-Person 3D Pose Estimation with Wi-Fi">
+    <meta property="og:description" content="Person-in-WiFi 3D: End-to-End Multi-Person 3D Pose Estimation with Wi-Fi, 2024.">
+    <meta property="og:url" content="https://text2cinemagraph.github.io/website/">
+
+    
+</head>
+
+<body>
+    <div class="highlight-clean" style="padding-bottom: 20px;">
+        <div class="container" style="padding-bottom: 10px; max-width: 1200px;">
+            <h1 class="text-center"><b>Person-in-WiFi 3D: End-to-End Multi-Person 3D Pose Estimation with Wi-Fi</b></h1>
+        </div>
+        <div class="container" style="max-width: 900px; display: flex; flex-direction: column;">
+            <div style="display: flex; align-items: center; justify-content: center;">
+                <div class="row authors" style="padding-bottom: 25px; display: flex; align-items: center; justify-content: space-around; width: 600px;">
+                    <h5 class="text-center"><a class="text-center" href="#">Fei Wang</a>
+                    </h5>
+                    <h5 class="text-center">
+                        <a class="text-center" href="#">Kangwei Yan</a>
+                    </h5>
+                    <h5 class="text-center">
+                        <a href="#">Bo Qian</a>
+                    </h5>
+                    <h5 class="text-center">
+                        <a href="#">Xing Wei</a>
+                    </h5>
+                    <h5 class="text-center">
+                        <a class="text-center" href="#">Han Ding</a>
+                    </h5>
+                    <h5 class="text-center">
+                        <a class="text-center" href="#">Jinsong Han</a>
+                    </h5>
+                </div>
+            </div>
+            <div class="row authors institute">
+                <div class="col-sm-12">
+                    <h4 class="text-center">
+                        XJTU &nbsp&nbsp 
+                        AIOT Group
+                    </h4>
+                </div>
+            </div>
+            <div class="row authors institute">
+                <div class="col-sm-12">
+                    <h3 class="text-center"><strong>Conference on Computer Vision and Pattern Recognition, CVPR (2024)</strong>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="buttons" style="margin-bottom: 8px;">
+            <a class="btn btn-light" role="button" href="#">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z">
+                    </path>
+                </svg>Paper
+            </a>
+            <a class="btn btn-light" role="button" href="#">
+                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px" viewBox="0 0 475 531"><path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                </svg>
+                Code
+            </a>
+            <a class="btn btn-light" aria-disabled="true" role="button" href="#">
+                <svg version="1.1" id="Icons" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px" viewBox="0 0 32 32" xml:space="preserve" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <style type="text/css"> .st0{fill:none;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;} </style> <path class="st0" d="M26,3H9C7.3,3,6,4.3,6,6v0c0,1.7,1.3,3,3,3h17v20"></path> <path class="st0" d="M26,29H9c-1.7,0-3-1.3-3-3v0V6"></path> <line class="st0" x1="26" y1="6" x2="9" y2="6"></line> <line class="st0" x1="10" y1="9" x2="10" y2="29"></line> </g></svg>
+                &nbsp;&nbsp;Tutorial
+            </a>
+            <a class="btn btn-light" role="button" href="#" onclick="scrollToSection('section1')">
+                <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15.9853L15.182 12.8033L14.1213 11.7427L12.75 13.114L12.75 5.25L11.25 5.25L11.25 13.114L9.8787 11.7427L8.81804 12.8033L12 15.9853ZM12 13.864L12 13.864L12.0001 13.864L12 13.864Z" fill="#080341"></path> <path d="M18 17.25L18 18.75L6 18.75L6 17.25L18 17.25Z" fill="#080341"></path> </g></svg>
+                Download dataset
+            </a>
+        </div>
+    </div>
+
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row teaser" style="justify-content: center;">
+            <img src="./images/framework.jpg" style="width: 90%;">
+        </div>
+    </div>
+
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center" style="margin-bottom: 30px; margin-top: 10px;">Abstract</h2>
+                <p>
+                    Wi-Fi signals, in contrast to cameras, offer privacy protection and occlusion resilience for some practical scenarios such as smart homes, elderly care, and virtual reality. Recent years have seen remarkable progress in the estimation of single-person 2D pose, single-person 3D pose, and multi-person 2D pose. This paper takes a step forward by introducing Person-in-WiFi 3D, a pioneering Wi-Fi system that accomplishes multi-person 3D pose estimation. Person-in-WiFi 3D~ has two main updates. Firstly, it has a greater number of Wi-Fi devices to enhance the capability for capturing spatial reflections from multiple individuals. Secondly, it leverages the Transformer for end-to-end estimation. Compared to its predecessor, Person-in-WiFi 3D~ is storage-efficient and fast. We deployed a proof-of-concept system in 4m $\times$ 3.5m areas and collected a dataset of over 97K frames with seven volunteers. Person-in-WiFi 3D~ attains 3D joint localization errors of 91.7mm (1-person), 108.1mm (2-person), and 125.3mm (3-person), comparable to cameras and millimeter-wave radars.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <hr class="divider"> -->
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center" style="margin-bottom: 30px; margin-top: 10px;">visualization results</h2>
+                <p></p>
+                <p></p>
+                <!-- <div id="singleconceptscroll" class="containershadow"
+                    style="overflow-y:scroll; max-width: 1400px; max-height: 1300px;">  -->
+
+                    <h4 class="text-left" style="margin-bottom: 30px; margin-top: 10px;">
+                        Visualization of pose estimation in three different scenarios
+                    </h4>
+
+                    <div class="row">
+                        <div class="column px-4" style="margin: auto;width: 33%;">
+                            <div class="row text-center"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                                <p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px;">Scenes 1</p>
+                                <video autoplay="autoplay" controls="controls" loop="loop" muted="muted"
+                                    src="./images/output_demo01.mp4" style="width:400px"
+                                    type="video/mp4"></video>
+                            </div>
+                        </div>
+                        <div class="column px-4" style="margin: auto;width: 33%;">
+                            <div class="row text-center"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                                <p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px;">Scenes 2</p>
+                                <video autoplay="autoplay" controls="controls" loop="loop" muted="muted"
+                                    src="./images/output_demo02.mp4" style="width:400px"
+                                    type="video/mp4"></video>
+                            </div>
+                        </div>
+                        <div class="column px-4" style="margin: auto;width: 33%;">
+                            <div class="row text-center"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                                <p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px;">Scenes 3</p>
+                                <video autoplay="autoplay" controls="controls" loop="loop" muted="muted"
+                                    src="./images/output_demo03.mp4" style="width:400px"
+                                    type="video/mp4"></video>
+                            </div>
+                        </div>
+                    </div> 
+
+                    <hr />
+                    <hr style="max-width: 1400px;">
+                    <div class="container" style="max-width: 1400px;">
+                        <div class="row teaser" style="justify-content: center;">
+                            <img src="./images/show3.png" style="width: 80%;">
+                        </div>
+                    </div>
+                <!-- </div> -->
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <hr style="max-width: 1400px;">
+    <h2 class="text-center" style="margin-bottom: 30px; margin-top: 10px;">Statistics</h2>
+    <div class="container" style="max-width: 1400px;">
+        <div class="row teaser" style="justify-content: center;">
+            <img src="./images/mpjpe.jpg" style="width: 80%;">
+        </div>
+    </div>
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center" style="margin-bottom: 30px; margin-top: 10px;">Wi-Fi Mesh</h2>
+                <p>
+                    
+
+                We expanded our work from 3D Pose to 3D Mesh. By modifying some of the network structure and prediction heads, we can obtain 3Dmesh estimates  over Wi-Fi.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center" style="margin-bottom: 30px; margin-top: 10px;">visualization results Mesh</h2>
+                <p></p>
+                <p></p>
+                <!-- <div id="singleconceptscroll" class="containershadow"
+                    style="overflow-y:scroll; max-width: 1400px; max-height: 1300px;"> -->
+
+                    <h4 class="text-left" style="margin-bottom: 30px; margin-top: 10px;">
+                        Visualization of 3D human Mesh in three different scenarios
+                    </h4>
+
+                    <div class="row">
+                        <div class="column px-4" style="margin: auto;width: 33%;">
+                            <div class="row text-center"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                                <p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px;">Scenes 1</p>
+                                <video autoplay="autoplay" controls="controls" loop="loop" muted="muted"
+                                    src="./images/mesh1.mp4" style="width:400px"
+                                    type="video/mp4"></video>
+                            </div>
+                        </div>
+                        <div class="column px-4" style="margin: auto;width: 33%;">
+                            <div class="row text-center"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                                <p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px;">Scenes 2</p>
+                                <video autoplay="autoplay" controls="controls" loop="loop" muted="muted"
+                                    src="./images/mesh2.mp4" style="width:400px"
+                                    type="video/mp4"></video>
+                            </div>
+                        </div>
+                        <div class="column px-4" style="margin: auto;width: 33%;">
+                            <div class="row text-center"
+                                style="display: flex; flex-direction: column; align-items: center; justify-content: center;">
+
+                                <p style="font-family: Chalkduster; font-size: 16px; margin-top: 5px;">Scenes 3</p>
+                                <video autoplay="autoplay" controls="controls" loop="loop" muted="muted"
+                                    src="./images/mesh3.mp4" style="width:400px"
+                                    type="video/mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                    <hr />
+                <!-- </div> -->
+                <p></p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <hr style="max-width: 1400px;">
+    <div class="highlight-clean" style="padding-bottom: 0px; padding-top: 10px;">
+                <section id="section1">
+                    <h2 class="text-center" style="margin-bottom: 10px;">Download our dataset</h2>
+                </section>
+                <div class="buttons" style="margin-bottom: 8px;">
+                    <a class="btn btn-light" role="button" href="#">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15.9853L15.182 12.8033L14.1213 11.7427L12.75 13.114L12.75 5.25L11.25 5.25L11.25 13.114L9.8787 11.7427L8.81804 12.8033L12 15.9853ZM12 13.864L12 13.864L12.0001 13.864L12 13.864Z" fill="#080341"></path> <path d="M18 17.25L18 18.75L6 18.75L6 17.25L18 17.25Z" fill="#080341"></path> </g></svg>WiFi dataset
+                    </a>
+
+                    <a class="btn btn-light" role="button" href="#">
+                        <svg width="24px" height="24px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12 15.9853L15.182 12.8033L14.1213 11.7427L12.75 13.114L12.75 5.25L11.25 5.25L11.25 13.114L9.8787 11.7427L8.81804 12.8033L12 15.9853ZM12 13.864L12 13.864L12.0001 13.864L12 13.864Z" fill="#080341"></path> <path d="M18 17.25L18 18.75L6 18.75L6 17.25L18 17.25Z" fill="#080341"></path> </g></svg>WiFi dataset raw
+                    </a>
+
+                    
+                </div>
+    </div>
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Citation</h2>
+                <code>
+                    @inproceedings{XXXX,<br>
+                    &nbsp; title={Person-in-WiFi 3D: End-to-End Multi-Person 3D Pose Estimation with Wi-Fi
+                    },<br>
+                    &nbsp; author={Kangwei Yan, Fei Wang, Bo Qian, Han Ding, Jinsong Han, Xing Wei},<br>
+                    &nbsp; booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},<br>
+                    &nbsp; journal={arXiv preprint arXiv:XXXX.XXXXX},<br>
+                    &nbsp; year   = {2024},<br>
+                }</code>
+            </div>
+        </div>
+    </div>
+
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Related and Concurrent Works</h2>
+                <h5>
+                    <ul>
+                        <li>Siming Fan, Jingtan Piao, Chen Qian, Kwan-Yee Lin, and Hongsheng Li. 
+                            <a href="https://slr-sfs.github.io/"> Simulating Fluids in Real-World Still Images. </a> ICCV
+                            2023. </li><br>
+
+                        <li>Aniruddha Mahapatra and Kuldeep Kulkarni. <a href="https://controllable-cinemagraphs.github.io/">
+                            Controllable Animation of Fluid Elements in Still Images.</a> CVPR 2022.</li><br>
+
+                        <li>Aleksander Holynski, Brian Curless, Steven M. Seitz, and Richard Szeliski. <a
+                                href="https://energy-based-model.github.io/Compositional-Visual-Generation-with-Composable-Diffusion-Models/">
+                                Animating Pictures with Eulerian Motion Fields.</a> CVPR 2021.</li><br>
+                    </ul>
+                </h5>
+            </div>
+        </div>
+    </div>
+
+    <hr style="max-width: 1400px;">
+    <div class="container" style="max-width: 1400px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Acknowledgements</h2>
+                <p>
+                    We are also grateful to Nupur Kumari, Gaurav Parmar, Or Patashnik, Songwei Ge, Sheng-Yu Wang, Chonghyuk (Andrew) Song, 
+                    Daohan (Fred) Lu, Richard Zhang, and Phillip Isola for fruitful discussions. This work is partly supported by Snap Inc. 
+                    and was partly done while Aniruddha was an intern at Snap Inc.
+                    <br>
+                    The website template is taken from <a href="https://www.cs.cmu.edu/~custom-diffusion/">Custom
+                        Diffusion</a> (which was built on<a href="https://dreamfusion3d.github.io/index.html">
+                        DreamFusion</a>'s project page). The text editor used in the demo video has been taken from <a
+                        href="https://rich-text-to-image.github.io/">Rich Text-to-Image</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
+</body>
+
+</html>
